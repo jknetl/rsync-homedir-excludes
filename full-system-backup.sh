@@ -16,13 +16,13 @@ fi
 
 DEST=$1
 
-RSYNC_OPTS="-aAX --progress --delete $ENV_OPTS"
+RSYNC_OPTS="-aW --progress $ENV_OPTS"
 
 echo "Running with options: $RSYNC_OPTS"
 
 mkdir -p $DEST || { echo "fail"; exit 102; }
 # backup the system (EXCLUDE /home)
-rsync  $RSYNC_OPTS --exclude={"/home/*", "/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} / $DEST
+rsync  $RSYNC_OPTS --exclude={"/home/*","/dev/*","/proc/*","/sys/*","/tmp/*","/run/*","/mnt/*","/media/*","/lost+found"} / $DEST
 
 # backup home directories excluding unnecessary stuff
 for homedir in $(ls /home) ; do
