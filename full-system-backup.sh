@@ -16,7 +16,7 @@ fi
 
 DEST=$1
 
-RSYNC_OPTS="-aAX --progress $ENV_OPTS"
+RSYNC_OPTS="-aAX --progress --delete $ENV_OPTS"
 
 echo "Running with options: $RSYNC_OPTS"
 
