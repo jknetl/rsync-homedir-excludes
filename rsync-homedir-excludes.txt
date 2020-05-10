@@ -15,21 +15,21 @@
 # (uncomment the files you don't need)        #
 ###############################################
 
-#.android
-#.AndroidStudio*/
+.android
+.AndroidStudio*/
 #Android/Sdk
-#.gradle
-#.gvm
-#.grails/
-#.grails_history
-#.kde/share/apps/nepomuk
-#.local/share/notbit
-#.local/libvirt
-#.vagrant
-#.vagrant.d
-#.wine
-#.twister
-#/twister
+.gradle
+.gvm
+.grails/
+.grails_history
+.kde/share/apps/nepomuk
+.local/share/notbit
+.local/libvirt
+.vagrant
+.vagrant.d
+.wine
+.twister
+/twister
 #Applications/eclipse*
 #/Downloads
 #*Popcorntime*
@@ -40,7 +40,7 @@
 #_build
 #
 ## Ruby gems
-#.rvm
+.rvm
 #
 ## Add Game Folders here:
 #
@@ -276,6 +276,13 @@ Thumbs.db
 .config/google-chrome/Default/Application Cache
 .config/google-chrome/Default/History Index *
 .config/google-chrome/Default/Service Worker/CacheStorage
+
+# additional chrome profile
+.config/google-chrome/Profile */Local Storage
+.config/google-chrome/Profile */Session Storage
+.config/google-chrome/Profile */Application Cache
+.config/google-chrome/Profile */History Index *
+.config/google-chrome/Profile */Service Worker/CacheStorage
 
 #Chromium:
 
