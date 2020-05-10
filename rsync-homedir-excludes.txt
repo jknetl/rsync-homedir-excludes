@@ -375,3 +375,5 @@ nohup.out
 .*Idea*/system/index
 
 .cache/*
+
+tmp
