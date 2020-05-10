@@ -369,3 +369,9 @@ nohup.out
 # ccache, remove cache but keep config
 .ccache/?
 .ccache/tmp
+
+# Intellij idea cache
+.*Idea*/system/caches
+.*Idea*/system/index
+
+.cache/*
