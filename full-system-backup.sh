@@ -16,7 +16,7 @@ fi
 
 DEST=$1
 
-RSYNC_OPTS="-aAXP $ENV_OPTS"
+RSYNC_OPTS="-aHAXxP $ENV_OPTS"
 
 echo "Running with options: $RSYNC_OPTS"
 
